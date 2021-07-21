@@ -1,0 +1,205 @@
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+
+    @include tablet {
+        max-width: 720px;
+    }
+
+    @include iphone {
+        max-width: 375px;
+    }
+}
+
+.contact-container {
+    width: 65%;
+    margin: 0 auto;
+
+    @include iphone {
+        width: 100%;
+    }
+}
+
+.subtitle {
+    font-size: 48px;
+    font-weight: bold;
+    color: $color_font;
+    margin-bottom: 40px;
+    text-align: center;
+
+    @include tablet {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+
+    @include iphone {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.product-subtitle {
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 40px;
+
+    span {
+        font-size: 32px;
+    }
+
+    @include tablet {
+        font-size: 32px;
+        margin-bottom: 32px;
+
+        span {
+            font-size: 24px;
+        }
+    }
+
+    @include iphone {
+        font-size: 20px;
+        margin-bottom: 20px;
+
+        span {
+            font-size: 16px;
+        }
+    }
+}
+
+.block-padding {
+    padding: 60px 0 80px;
+
+    @include tablet {
+        padding: 40px 0 56px;
+    }
+
+    @include iphone {
+        padding: 32px 0 40px;
+    }
+}
+
+.product-padding {
+    padding: 80px 0 160px;
+
+    @include tablet {
+        padding: 56px 0 96px;
+    }
+
+    @include iphone {
+        padding: 32px 0 56px;
+    }
+}
+
+.store-padding {
+    padding: 96px 0 128px;
+
+    @include tablet {
+        padding: 60px 0 76px;
+    }
+
+    @include iphone {
+        padding: 28px 0 40px;
+    }
+}
+
+.QA-padding {
+    padding: 96px 0 128px;
+
+    @include tablet {
+        padding: 60px 0 72px;
+    }
+
+    @include iphone {
+        padding: 28px 0 36px;
+    }
+}
+
+.focus {
+    border-left: 1px solid $color_border2;
+    border-right: 1px solid $color_border2;
+    border-bottom: 4px solid $color_main;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    padding-left: 16px;
+    border-left: 8px solid $title_border;
+    margin-bottom: 60px;
+    text-align: left;
+
+    @include tablet {
+        border-left: 4px solid $title_border;
+        margin-bottom: 40px;
+    }
+
+    @include iphone {
+        font-size: 28px;
+        margin-bottom: 30px;
+        padding-left: 8px;
+    }
+
+}
+
+.QA-subtitle {
+    text-align: left;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 36px;
+
+    @include tablet {
+        font-size: 48px;
+        margin-bottom: 32px;
+    }
+
+    @include iphone {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+}
+
+.blog-padding {
+    padding: 40px 0 160px;
+
+    @include tablet {
+        padding: 32px 0 96px;
+    }
+
+    @include iphone {
+        padding: 28px 0 56px;
+    }
+}
+
+.blog-page_padding {
+    padding-top: 36px;
+
+    @include tablet {
+        padding-top: 40px;
+    }
+
+    @include iphone {
+        padding-top: 20px;
+    }
+}
+
+.tag {
+    font-size: 24px;
+    font-weight: bold;
+    color: $color_main;
+
+    @include iphone {
+        font-size: 16px;
+    }
+}
+
+.p-15 {
+    padding: 0 15px;
+}
+
+.mt {
+    margin-top: 116px;
+
+    @include iphone {
+        margin-top: 168px;
+    }
+}

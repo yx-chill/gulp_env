@@ -1,0 +1,63 @@
+.blog-banner {
+    background-color: $color_font;
+    .blog-banner-block {
+        display: flex;
+        justify-content: space-between;
+    }
+    @include iphone {
+        display: none;
+    }
+}
+.blog-menu {
+    display: flex;
+    margin-left: -24px;
+    a {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 12px 24px;
+        display: block;
+    }
+    @include tablet {
+        margin-left: -16px;
+        a {
+            font-size: 16px;
+            padding: 16px;
+        }
+    }
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 20%;
+    input {
+        height: 40px;
+        width: 70%;
+        font-size: 20px;
+        color: #FFF;
+        background-color: $color_font;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #FFF;
+        margin-right: 10px;
+    }
+    button {
+        width: 40px;
+        height: 40px;
+        background-color: $color_font;
+        border: none;
+        cursor: pointer;
+        background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-search.svg') no-repeat center;
+    }
+    @include tablet {
+        input {
+            width: 100%;
+            font-size: 16px;
+            height: 30px;
+        }
+        button {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

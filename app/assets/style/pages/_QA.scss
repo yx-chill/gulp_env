@@ -1,0 +1,34 @@
+.QA-list {
+    li {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+
+        h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        .answer {
+            align-self: center;
+        }
+    }
+
+    @include tablet {
+        li {
+            margin-bottom: 24px;
+        }
+    }
+
+    @include iphone {
+        li {
+            margin-bottom: 20px;
+
+            h3 {
+                margin-bottom: 8px;
+            }
+        }
+    }
+}

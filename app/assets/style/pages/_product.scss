@@ -1,0 +1,221 @@
+.product-banner_menu {
+    display: flex;
+    align-items: center;
+
+    li {
+        width: 33.33%;
+        height: 96px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            border-left: 1px solid $color_border2;
+            border-right: 1px solid $color_border2;
+            border-bottom: 4px solid $color_main;
+        }
+
+        a {
+            color: #000;
+            font-size: 28px;
+            padding: 25px 0;
+
+        }
+
+        img,
+        i {
+            max-width: 45px;
+            max-height: 45px;
+            font-size: 45px;
+            margin-right: 10px;
+        }
+    }
+
+    @include tablet {
+        li {
+            height: 60px;
+
+            a {
+                font-size: 24px;
+                padding: 14px 0;
+            }
+
+            img,
+            i {
+                width: 30px;
+                height: 30px;
+                font-size: 30px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    @include iphone {
+        li {
+            height: 30px;
+
+            a {
+                font-size: 14px;
+                line-height: 1;
+                padding: 6px 0;
+            }
+
+            img,
+            i {
+                width: 15px;
+                height: 15px;
+                font-size: 15px;
+                margin-right: 6px;
+            }
+        }
+    }
+}
+
+.banner-photo {
+    display: flex;
+
+    .photo {
+        width: 50%;
+    }
+}
+
+.product-main {
+    .product-iphone {
+        display: none;
+    }
+
+    @include tablet {
+        .product-tablet {
+            display: none;
+        }
+    }
+
+    @include iphone {
+        .product-list {
+            display: none;
+        }
+
+        .product-iphone {
+            display: flex;
+        }
+    }
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    li {
+        width: 23%;
+        margin-bottom: 100px;
+        img {
+            width: 100%;
+        }
+        h3 {
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            font-weight: 400;
+
+            span {
+                color: $color_main;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .product-color {
+        display: flex;
+
+        li {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            margin-right: 8px;
+            margin-bottom: 0;
+        }
+
+        .color-darkbrown {
+            background-color: $color_darkbrown;
+        }
+
+        .color-brown {
+            background-color: $color_brown;
+        }
+    }
+
+    @include tablet {
+        li {
+            width: 48%;
+            margin-bottom: 72px;
+
+            h3 {
+                font-size: 24px;
+            }
+        }
+    }
+
+    @include iphone {
+        li {
+            width: 100%;
+            margin-bottom: 32px;
+
+            h3 {
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+.sunglasses {
+    display: none;
+
+    .product-main {
+        padding: 80px 0 60px;
+    }
+
+    .pagination {
+        display: none;
+    }
+
+    @include tablet {
+        .product-main {
+            padding: 56px 0 24px;
+        }
+    }
+
+    @include iphone {
+        .product-main {
+            padding: 32px 0 56px;
+        }
+
+        .pagination {
+            display: flex;
+        }
+    }
+}
+
+.sunglasses-list {
+    li {
+        width: 30%;
+
+        @include tablet {
+            width: 48%;
+        }
+    }
+}
+
+.functional {
+    display: none;
+    text-align: center;
+    font-size: 200px;
+    color: $color_gray;
+    @include tablet {
+        font-size: 150px;
+    }
+    @include iphone {
+        font-size: 100px;
+    }
+}

@@ -1,0 +1,14 @@
+body {
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    transition: .5s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}

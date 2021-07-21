@@ -1,23 +1,15 @@
-$color: #00cc99;
-
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
-
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
-
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
+@import 'base/cssreset';
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'base/base';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'utils/utilities';
+@import 'components/pagination';
+@import 'layout/banner';
+@import 'pages/home';
+@import 'pages/product';
+@import 'pages/store';
+@import 'pages/QA';
+@import 'pages/blog';
+@import 'pages/content';

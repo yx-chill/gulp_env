@@ -1,0 +1,417 @@
+.banner {
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true');
+    background-size: cover;
+}
+
+.banner-block {
+    height: 840px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    color: $color_font;
+
+    h2 {
+        font-size: 64px;
+        font-weight: bold;
+
+        span {
+            font-size: 36px;
+            font-weight: 500;
+        }
+
+
+    }
+
+    @include tablet {
+        h2 {
+            font-size: 48px;
+
+            span {
+                font-size: 20px;
+            }
+        }
+
+    }
+
+    @include iphone {
+        height: 394px;
+
+        h2 {
+            font-size: 32px;
+
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+
+.profession {
+    background-color: $color_bg;
+}
+
+.profession-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    li {
+        text-align: center;
+        width: 255px;
+
+        img {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: bold;
+            color: $color_font;
+            padding: 16px 0 8px;
+        }
+
+        p {
+            text-align: left;
+        }
+    }
+
+    @include tablet {
+        justify-content: center;
+
+        li {
+            margin-bottom: 56px;
+        }
+    }
+
+    @include iphone {
+        li {
+            margin-bottom: 32px;
+        }
+
+    }
+}
+
+.classic-list {
+    li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+
+
+        img {
+            width: 56%;
+            height: auto;
+            margin-right: 30px;
+            display: inline-block;
+        }
+
+        h3 {
+            color: $color_main;
+            font-size: 48px;
+            font-style: italic;
+            font-weight: 900;
+
+            img {
+                width: 45px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+
+        img {
+            margin-right: 0;
+            margin-left: 30px;
+        }
+    }
+
+    @media (max-width:900px) {
+        li {
+            h3 {
+                font-size: 30px;
+            }
+        }
+    }
+
+    @include tablet {
+        li {
+            margin-bottom: 8px;
+
+
+            h3 {
+                font-size: 24px;
+
+                img {
+                    width: 40px;
+                }
+            }
+        }
+
+        .reverse {
+            flex-direction: row;
+
+            img {
+                margin-left: 0;
+                margin-right: 30px;
+            }
+
+            h3 {
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    @media(max-width:500px) {
+        li {
+            h3 {
+                font-size: 18px;
+            }
+        }
+    }
+
+    @include iphone {
+        li {
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            h3 {
+                font-size: 22px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+            }
+
+        }
+
+        .reverse {
+            img {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.design {
+    background: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true') center;
+
+    .subtitle {
+        color: #FFF;
+    }
+}
+
+.design-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    li {
+        width: 48%;
+        position: relative;
+        text-align: center;
+
+        img {
+            opacity: .5;
+        }
+
+        a {
+            font-size: 72px;
+            font-weight: bold;
+            color: $color_main;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            left: 0;
+            transform: translate(0, -50%);
+        }
+    }
+
+    @include tablet {
+        li {
+            a {
+                font-size: 32px;
+            }
+        }
+    }
+
+    @include iphone {
+        li {
+            width: 100%;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+
+.recommend-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+
+    li {
+        width: 24%;
+        height: 460px;
+        color: $color_dark;
+        border: 1px solid $color_border;
+        border-radius: 4px;
+        box-shadow: 0px 2px 6px $color_shadow;
+        position: relative;
+
+        img {
+            width: 100%;
+            border-radius: 4px 4px 0px 0px;
+        }
+    }
+
+    .recommend-info {
+        padding: 16px;
+
+        h4 {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        span {
+            position: absolute;
+            left: 16px;
+            bottom: 16px;
+            font-size: 14px;
+            color: $color_gray;
+        }
+    }
+
+    @include tablet {
+        li {
+            width: 48%;
+            margin-bottom: 32px;
+        }
+
+        .recommend-info {
+            padding: 16px 24px;
+
+            span {
+                left: 24px;
+            }
+        }
+    }
+
+    @include iphone {
+        li {
+            width: 100%;
+            margin-bottom: 16px;
+        }
+
+    }
+}
+
+
+.contact {
+    background-color: $color_bg;
+
+}
+
+.contact-block {
+    .subtitle {
+        color: #000;
+        margin-bottom: 24px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    form {
+        p {
+            margin-bottom: 16px;
+        }
+
+        .input-text {
+            width: 100%;
+            height: 50px;
+            padding-left: 16px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 136px;
+            padding-left: 16px;
+        }
+
+        .btn-position {
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+        }
+
+        button {
+            width: 40%;
+            height: 54px;
+            color: #FFF;
+            background-color: $color_main;
+            border: none;
+            padding: 16px 0;
+            cursor: pointer;
+        }
+    }
+
+    @include tablet {
+        p {
+            margin-bottom: 16px;
+        }
+
+        form {
+            font-size: 14px;
+
+            p {
+                margin-bottom: 8px;
+            }
+
+            .input-text {
+                height: 36px;
+                padding-left: 12px;
+            }
+
+            textarea {
+                height: 100px;
+                padding-left: 12px;
+            }
+
+            .btn-position {
+                padding-top: 20px;
+            }
+
+            button {
+                width: 32%;
+                height: 40px;
+                padding: 10px 0;
+            }
+        }
+    }
+
+    @include iphone {
+
+        p {
+            margin-bottom: 8px;
+        }
+
+        button {
+            width: 48%;
+            height: 36px;
+            padding: 8px 0;
+        }
+    }
+}

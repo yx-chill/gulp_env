@@ -1,0 +1,51 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 88px;
+    background-color: $color_main;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    img {
+        display: inline-block;
+    }
+    .header-menu {
+        display: flex;
+        align-items: center;
+        margin-right: -32px;
+
+        a {
+            padding: 10px 32px;
+        }
+    }
+
+    @include tablet {
+        padding: 30px 40px;
+        .header-menu {
+            margin-right: -10px;
+            a {
+                padding: 10px 20px;
+            }
+        }
+    }
+    @include iphone {
+        text-align: center;
+        flex-direction: column;
+        padding: 0;
+        h1{
+            padding: 10px 0;
+        }
+        .header-menu {
+            flex-wrap: wrap;
+            width: 100%;
+            li {  
+                width: 50%;
+                border: 1px solid #FFF;
+                a {
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+}

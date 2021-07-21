@@ -1,0 +1,22 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    li {
+        border: 1px solid $page_border;
+        margin-left: -1px;
+        a {
+            font-size: 18px;
+            color: #000;
+            padding: 12px 16px;
+            &:hover {
+                color: #FFF;
+                background-color: #000;
+            }
+            @include iphone {
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+    }
+
+}

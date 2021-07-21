@@ -1,0 +1,169 @@
+footer {
+    padding: 44px 0 40px;
+    background-color: $color_main;
+    .footer-block {
+        position: relative;
+    }
+
+    .footer-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+
+    }
+
+    @include tablet {
+        padding: 38px 0 32px;
+        .footer-head {
+            margin-bottom: 0;
+        }
+    }
+
+    @include iphone {
+        padding: 25px 0;
+
+
+        .footer-head {
+            position: absolute;
+            top: 0;
+            right: 15px;
+        }
+    }
+}
+
+.footer-menu {
+    display: flex;
+    margin-left: -24px;
+
+    a {
+        padding: 10px 24px;
+    }
+
+    @include tablet {
+        margin-left: -20px;
+
+        a {
+            padding: 10px 20px;
+        }
+    }
+
+    @include iphone {
+        display: none;
+    }
+}
+
+.footer-contact {
+    padding: 8px 0;
+    border-bottom: 1px solid #FFF;
+
+    li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+
+        img {
+            margin-right: 20px;
+        }
+
+        a {
+            font-size: 36px;
+        }
+    }
+
+    @include tablet {
+
+        li {
+            margin-bottom: 12px;
+
+            img {
+                width: 18px;
+                margin-right: 10px;
+            }
+
+            a {
+                font-size: 20px;
+            }
+        }
+
+    }
+
+    @include iphone {
+        padding: 0 0 18px 0;
+
+        li {
+            margin-bottom: 6px;
+
+            img {
+                width: 15px;
+                margin-right: 6px;
+            }
+
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.SNS {
+    display: flex;
+
+    li {
+        margin-left: 32px;
+    }
+
+    @include tablet {
+        li {
+            margin-left: 24px;
+
+            img {
+                width: 24px;
+            }
+        }
+    }
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+
+    p {
+        color: #FFF;
+    }
+
+    .copyright-menu {
+        display: flex;
+
+        li {
+            margin-left: 48px;
+        }
+    }
+
+    @include tablet {
+        padding-top: 24px;
+
+        .copyright-menu {
+            li {
+                margin-left: 24px;
+            }
+        }
+    }
+
+    @include iphone {
+        padding-top: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .copyright-menu {
+            flex-direction: column;
+
+            li {
+                margin: 8px 0 0 0;
+                text-align: left;
+            }
+        }
+    }
+}
