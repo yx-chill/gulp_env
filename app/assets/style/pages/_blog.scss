@@ -1,3 +1,8 @@
+.blog {
+    @include iphone {
+        margin-top: 168px;
+    }
+}
 .blog-list {
 
     li {

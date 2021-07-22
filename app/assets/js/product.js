@@ -6,11 +6,9 @@ const dataOptical = document.querySelector('.optical');
 const dataSun = document.querySelector('.sunglasses');
 const dataFun = document.querySelector('.functional');
 
-
 btnFilter.addEventListener('click', function (e) {
     btnStatus(e.target);
 })
-
 
 function btnStatus(btnFocus) {
     optical.classList.remove('focus');
