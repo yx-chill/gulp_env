@@ -492,7 +492,7 @@ footer {
   padding: 0 15px; }
 
 .mt {
-  margin-top: 116px; }
+  margin-top: 115px; }
   @media (max-width: 375px) {
     .mt {
       margin-top: 168px; } }
@@ -1248,6 +1248,10 @@ footer {
     margin-bottom: 20px; }
     .QA-list li h3 {
       margin-bottom: 8px; } }
+
+@media (max-width: 375px) {
+  .blog {
+    margin-top: 168px; } }
 
 .blog-list li {
   display: -webkit-box;
